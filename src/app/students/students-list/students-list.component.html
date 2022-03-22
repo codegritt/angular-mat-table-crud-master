@@ -109,7 +109,7 @@
   <mat-spinner *ngIf="isProcessing"></mat-spinner>
 </div>
   
-<div class="table-container">
+<!-- <div class="table-container"> -->
   <table mat-table multiTemplateDataRows [dataSource]="students" matSort matSortActive="lastName" matSortDirection="asc">
 
 	<!-- The student main row columns. -->
@@ -266,7 +266,7 @@
 	<tr mat-row *matRowDef="let student; columns: ['studentDetail'];" [ngClass]="getStudentDetailClass(student.studentId)"></tr>
 
   </table>
-</div>
+<!-- </div> -->
 
 <mat-paginator [length]="totalStudents" [pageSize]="defaultPageSize" [pageSizeOptions]="pageSizeOptions" [showFirstLastButtons]="showFirstLastButtons"></mat-paginator>
 </div>
