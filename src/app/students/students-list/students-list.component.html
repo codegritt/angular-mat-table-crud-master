@@ -121,7 +121,7 @@
 		<!-- The student main row columns. -->
 		<ng-container matColumnDef="select">
 			<th mat-header-cell *matHeaderCellDef>
-				<mat-checkbox (change)="$event ? masterToggle() : null"
+				<mat-checkbox  style="position: relative;right: 8px;" (change)="$event ? masterToggle() : null"
 					[checked]="selection.hasValue() && isAllSelected()"
 					[indeterminate]="selection.hasValue() && !isAllSelected()">
 				</mat-checkbox>
