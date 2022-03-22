@@ -1,3 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700&display=swap');
+
+.span1{
+  color:navy;
+  font-weight: 600;
+  position: relative;
+  left: 303px;
+  bottom: 10px;
+
+}
+
+.filter{
+  /* box-shadow: 0 0px 20px rgba(0,0,0,0.05), 0 0px 20px rgba(0,0,0,0.23); */
+  position: relative;
+  left: 305px;
+  bottom: 10px;
+  width: 12.5%;
+  height: 30px;
+}
+
+
+
 /* .container {
   position: relative;
   min-height: 200px;
@@ -14,17 +36,19 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .mat-table {
   width: 55%; 
-  margin-left: auto; 
-    margin-right: auto;
+  /* margin-left: auto; 
+    margin-right: auto; */
     border-collapse: collapse;
     border:  solid 2px navy;
     text-align:center;
   display: block;
   justify-content: center;
+  font-family: 'Montserrat', sans-serif;
 }
 
 /* .table-container {
@@ -33,17 +57,20 @@
 } */
 
 /* The following CSS will left align the paginator. I prefer it right aligned so I've commented it out */
-/*
+
 .mat-paginator {
-	display: flex;
-	justify-content: left;
+ width: 55%; 
+  margin-left: auto; 
+  margin-right: auto;
+  color: navy;
+  font-family: 'Montserrat', sans-serif;
 }
-*/
+
 
 /* Add border and padding to each cell. NOTE: the border color matches the hover color below. */
 .mat-cell, .mat-header-cell {
-  border: 1px solid #ddd;
-  padding: 8px;
+  border: 2px solid navy;
+
 }
 
 .detail-row-collapsed {
@@ -63,15 +90,15 @@
 }
 
 .column-filtered {
-  background-color: DimGray;
+  background-color: #fff;
 }
 
 .column-not-filtered {
-  background-color: rgb(170,170,170);
+  background-color: navy;
 }
 
 .mat-header-cell {
-  background-color: rgb(170,170,170);
+  background-color: navy;
   color: white;
 }
 
@@ -81,7 +108,7 @@
 
 /* Make table zebra stripped. Due to detail rows, need to start with 3rd row and stripe every 4th row. */
 tr:nth-child(4n+3) {
-  background-color: #f2f2f2
+  background-color: #fff
 }
 
 /* Highlight rows on hover. */
