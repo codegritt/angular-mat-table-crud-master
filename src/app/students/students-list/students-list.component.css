@@ -51,6 +51,27 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+
+.mat-header-cell {
+  background-color: navy;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1.1em;
+ 
+  
+}
+
+.mat-cell{
+ 
+   font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: navy;
+  font-size: 1em;
+
+} 
+
+
 /* .table-container {
   height: 80vh;		
   overflow-y: scroll;	
