@@ -213,6 +213,32 @@ bottom: 5px;
   width: 100%;
 }
 
+.span1{
+  color:navy;
+  font-weight: 600;
+  position: relative;
+  left: 0px;
+
+
+}
+
+.filter{
+  /* box-shadow: 0 0px 20px rgba(0,0,0,0.05), 0 0px 20px rgba(0,0,0,0.23); */
+  position: relative;
+  left: 5px;
+  bottom: 10px;
+  width: 12.5%;
+  height: 30px;
+}
+
+.mat-paginator {
+  width: 100%; 
+   margin-left: auto; 
+   margin-right: auto;
+   color: navy;
+   font-family: 'Montserrat', sans-serif;
+ }
+
 }
 
 
