@@ -555,9 +555,9 @@ export class StudentsListComponent implements AfterViewInit {
     }
 
 
-        // applyFilter(filterValue:string){
-        //     this.students.filter=filterValue.trim().toLowerCase();
-        //   }
+        applyFilter(filterValue:any){
+            this.students.filter=filterValue.trim().toLowerCase();
+          }
         
           
 }
