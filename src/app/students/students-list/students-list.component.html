@@ -127,7 +127,7 @@
 				</mat-checkbox>
 			</th>
 			<td mat-cell *matCellDef="let row">
-				<mat-checkbox (click)="$event.stopPropagation()" (change)="$event ? selection.toggle(row) : null"
+				<mat-checkbox  style="position: relative;right: 8px;" (click)="$event.stopPropagation()" (change)="$event ? selection.toggle(row) : null"
 					[checked]="selection.isSelected(row)">
 				</mat-checkbox>
 			</td>
@@ -136,14 +136,14 @@
 		<ng-container matColumnDef="expandRow">
 			<th mat-header-cell *matHeaderCellDef></th>
 			<td mat-cell *matCellDef="let student">
-				<button *ngIf="!isStudentExpanded(student.studentId)" mat-icon-button
+				<!-- <button *ngIf="!isStudentExpanded(student.studentId)" mat-icon-button
 					(click)="expandStudent(student.studentId)">
 					<mat-icon>arrow_right</mat-icon>
 				</button>
 				<button *ngIf="isStudentExpanded(student.studentId)" mat-icon-button
 					(click)="collapseStudent(student.studentId)">
 					<mat-icon>arrow_drop_down</mat-icon>
-				</button>
+				</button> -->
 			</td>
 		</ng-container>
 
@@ -251,7 +251,7 @@
 						<td mat-sort-header>Actions</td>
 				
 				<button mat-icon-button matTooltip="Delete selected"
-					style=" border-color: transparent;font-size:26px;color:#d9534f" (click)="onDeleteSelectedClick()">
+					style=" border-color: transparent;font-size:26px;color:#d9534f;position: relative;right: 5px;" (click)="onDeleteSelectedClick()">
 					<mat-icon>delete_sweep</mat-icon>
 				</button>
 			</tr>
