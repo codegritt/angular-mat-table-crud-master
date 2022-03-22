@@ -75,6 +75,7 @@
 } 
 
 
+
 /* .table-container {
   height: 80vh;		
   overflow-y: scroll;	
@@ -189,6 +190,29 @@ bottom: 5px;
 
    
   }
+
+  .mat-table {
+    width: 94%; 
+    margin-left: auto; 
+      margin-right: auto;
+      border-collapse: collapse;
+      border:  solid 0.1px navy;
+      /* text-align:center;
+    display: block;
+    justify-content: center; */
+    font-family: 'Montserrat', sans-serif;
+    overflow-x:auto;
+  }
+
+  /* * {
+    overflow-x: auto;
+  } */
+  
+.table-container{
+  overflow-x: auto;
+  width: 100%;
+}
+
 }
 
 
