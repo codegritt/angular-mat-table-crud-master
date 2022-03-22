@@ -151,7 +151,7 @@
 			<th mat-header-cell *matHeaderCellDef>
 				<table>
 					<tr>
-						<td mat-sort-header>Student Id</td>
+						<td mat-sort-header>Employee Id</td>
 						<td #tdStudentId><button mat-icon-button matTooltip="Filter by Student Id"
 								(click)="openTextFilterDialog(tdStudentId, 'studentSchoolId')">
 								<mat-icon [ngClass]="getColumnFilterClass('studentSchoolId')">filter_list</mat-icon>
@@ -223,7 +223,7 @@
 			<th mat-header-cell *matHeaderCellDef>
 				<table>
 					<tr>
-						<td mat-sort-header>Student Email</td>
+						<td mat-sort-header>Employee Email</td>
 						<td #tdStudentEmail><button mat-icon-button matTooltip="Filter by Student Email"
 								(click)="openTextFilterDialog(tdStudentEmail, 'studentEmail')">
 								<mat-icon [ngClass]="getColumnFilterClass('studentEmail')">filter_list</mat-icon>
@@ -245,14 +245,18 @@
 
 		<ng-container matColumnDef="editDelete">
 			<th mat-header-cell *matHeaderCellDef>
-				<button mat-icon-button matTooltip="Add student"
-					style=" border-color: transparent; font-size:26px;color: #5cb85c;" (click)="onAddStudentClick()">
-					<mat-icon>add_box</mat-icon>
-				</button>
+
+				<table>
+					<tr>
+						<td mat-sort-header>Actions</td>
+				
 				<button mat-icon-button matTooltip="Delete selected"
 					style=" border-color: transparent;font-size:26px;color:#d9534f" (click)="onDeleteSelectedClick()">
 					<mat-icon>delete_sweep</mat-icon>
 				</button>
+			</tr>
+			</table>
+		
 			</th>
 			<td mat-cell *matCellDef="let student">
 				<span *ngIf="!isEditingStudent(student.studentId)">
