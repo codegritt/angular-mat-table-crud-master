@@ -26,12 +26,12 @@
 } */
 
 .table-loading-shade {
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   bottom: 56px;
   right: 0;
-  background: rgba(0, 0, 0, 0.15);
+  background:(0, 0, 0, 0.15);
   z-index: 1;
   display: flex;
   align-items: center;
@@ -40,11 +40,11 @@
 }
 
 .mat-table {
-  width: 55%; 
-  /* margin-left: auto; 
-    margin-right: auto; */
+  width: 94%; 
+  margin-left: auto; 
+    margin-right: auto;
     border-collapse: collapse;
-    border:  solid 2px navy;
+    border:  solid 0.1px navy;
     text-align:center;
   display: block;
   justify-content: center;
@@ -59,7 +59,7 @@
 /* The following CSS will left align the paginator. I prefer it right aligned so I've commented it out */
 
 .mat-paginator {
- width: 55%; 
+ width: 94%; 
   margin-left: auto; 
   margin-right: auto;
   color: navy;
@@ -117,7 +117,7 @@ tr:nth-child(4n+3) {
 }
 
 /* Column Widths */
-.mat-column-select {
+/* .mat-column-select {
   width: 40px;
 }
 .mat-column-expandRow {
@@ -128,7 +128,7 @@ tr:nth-child(4n+3) {
 }
 .mat-column-editDelete {
   width: 80px;
-}
+} */
 
 
 
