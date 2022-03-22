@@ -17,11 +17,11 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { StudentsRoutingModule } from './students-routing.module';
 import { DialogsModule } from '../dialogs/dialogs.module';
 import { StudentsListComponent } from './students-list/students-list.component';
-import { StudentsNotesComponent } from './students-notes/students-notes.component';
+
 import { StudentDetailComponent } from './student-detail/student-detail.component';
 
 @NgModule({
-    declarations: [StudentsListComponent, StudentsNotesComponent, StudentDetailComponent],
+    declarations: [StudentsListComponent, StudentDetailComponent],
     imports: [
         CommonModule,
         MatPaginatorModule,
