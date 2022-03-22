@@ -45,9 +45,9 @@
     margin-right: auto;
     border-collapse: collapse;
     border:  solid 0.1px navy;
-    text-align:center;
+    /* text-align:center;
   display: block;
-  justify-content: center;
+  justify-content: center; */
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -58,6 +58,9 @@
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 1.1em;
+  
+
+
  
   
 }
