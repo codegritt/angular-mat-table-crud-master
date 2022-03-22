@@ -1,13 +1,3 @@
-<mat-toolbar color="primary">
-  <mat-toolbar-row>
-    <a mat-button routerLink="/home" routerLinkActive="active">Home</a>
-    <a mat-button routerLink="/calc" routerLinkActive="active">Calculator</a>
-    <a mat-button [matMenuTriggerFor]="students">Students</a>
-    <mat-menu #students="matMenu">
-      <a mat-menu-item routerLink="/students/list" routerLinkActive="active">List</a>
-      <a mat-menu-item routerLink="/students/notes" routerLinkActive="active">Notes</a>
-    </mat-menu>
-  </mat-toolbar-row>
-</mat-toolbar>
+
 
 <router-outlet></router-outlet>
