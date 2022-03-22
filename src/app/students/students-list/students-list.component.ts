@@ -28,7 +28,7 @@ export class StudentsListComponent implements AfterViewInit {
     students: Student[] = [];
     totalStudents = 0;
     defaultPageSize = 5;
-    pageSizeOptions: number[] = [5, 10, 15, 20, 25];
+    pageSizeOptions: number[] = [5, 10, 15, 20];
     showFirstLastButtons = true;
     expandedStudents: Set<number> = new Set<number>();
     isProcessing = true;
