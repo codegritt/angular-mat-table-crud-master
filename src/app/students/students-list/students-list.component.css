@@ -17,14 +17,20 @@
 }
 
 .mat-table {
-  width: 100%;
-  border-collapse: collapse;
+  width: 55%; 
+  margin-left: auto; 
+    margin-right: auto;
+    border-collapse: collapse;
+    border:  solid 2px navy;
+    text-align:center;
+  display: block;
+  justify-content: center;
 }
 
-.table-container {
-  height: 80vh;			/* Have table take up 80% of the browser's viewport height. */
-  overflow-y: scroll;	/* Always display y-axis scrollbar so table size doesn't change when the need for the scrollbar changes. */
-}
+/* .table-container {
+  height: 80vh;		
+  overflow-y: scroll;	
+} */
 
 /* The following CSS will left align the paginator. I prefer it right aligned so I've commented it out */
 /*
